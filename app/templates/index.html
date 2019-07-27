@@ -1,5 +1,11 @@
+{% extends 'base.html'%}
+{% import 'macros.html' as macro%}
+
 <!DOCTYPE html>
 <html>
+        {% block content %}
+
+
     <head>
     <body>
         <meta charset="utf-8">
@@ -16,6 +22,7 @@
             {% for popular_article in popular %}
                 <li>{{ popular_article.title}}</li>
             {% endfor %}
+
         </ul>
     </ul>
 
@@ -25,8 +32,10 @@
         {% for trending_movie in trending %}
             <li>{{ trending_movie.title}}</li>
         {% endfor %}
+
     </ul>
 
 
     </body>
+    {% endblock%}
 </html>
