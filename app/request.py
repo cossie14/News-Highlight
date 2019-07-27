@@ -24,5 +24,28 @@ base_url = app.config["ARTICLE_API_BASE_URL"]def get_articles(category):
             article_results = process_results(article_results_list)
 
 
+    return article_results_list
+
+
+def process_results(article_list):
+    '''
+    function to process results and transform them to a list of objects
+    Args:
+        article_list:dictionary cotaining article details
+    Returns:
+        article_results: A list of article objects
+    '''
+    article_results = []
+    for article_item in   article_list:
+        id =  article_item.get('id')
+        name =  article_item.get('name')
+        description = article_item.get('description')
+        url = article_item.get('url')
+        if id:
+           article_object = Article(id,name,description,url)
+           article_results.append(  article_object)
+
     return article_results
+
+
 
