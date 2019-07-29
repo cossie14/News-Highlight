@@ -6,8 +6,7 @@ Sylviah Rutto
 
 
 ## Description
-This is an Python terminal app that allows generation and storage of user details such as passwords and usernames.
-
+This is a python flask web application that allows a user view a list of various news sources.
 
 ## BDD
   # The behaviors implemented include;
@@ -29,7 +28,7 @@ This is an Python terminal app that allows generation and storage of user detail
 5 Install flask
 
 ## Technologies used
-1 Python vs3.6
+1 Python vs3.6<br>
 2 Flask
 
 ## License 
