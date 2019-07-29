@@ -4,8 +4,8 @@
 <div class="container">
 
 	
-        <h3> Top Headlines</h3>
-        {% for article_row in articles | batch(4)%}
+	   <h3> Top Headlines</h3>
+        {% for article_row in articles | batch(5)%}
 
 	        <div class="row">
 
@@ -18,7 +18,7 @@
 						      </a>
 						      <div class="caption">
 						        <h4><a href="{{article.url}}" target="_blank">{{article.title |truncate(35)}}</a></h4>
-						        <p>{{article.description | truncate(80)}}</p>
+						        <p>{{article.description | truncate(60)}}</p>
 						        <a href="{{article.url}}" target="_blank"> Read More</a>
 
 
