@@ -1,0 +1,17 @@
+.container{
+    background-color: blueviolet;
+    
+}
+h3{
+    color: chartreuse;
+}
+body{
+    font-family: 'Old Standard TT', serif;
+
+}
+.col-md-3{
+    color: chartreuse;
+    font-family: 'Cookie', cursive; 
+    font-size: medium;
+
+}

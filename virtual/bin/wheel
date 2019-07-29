@@ -1,4 +1,4 @@
-#!/home/sylviah/News-Highlight/virtual/bin/python
+#!/home/sylviah/Watchlist/virtual/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

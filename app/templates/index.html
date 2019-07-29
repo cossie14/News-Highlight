@@ -1,44 +1,36 @@
+  
 {% extends 'base.html'%}
-{% import 'macros.html' as macro%}
-{% block styles%}
-    {{ super() }}
-    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+{% import 'macros.html' as macro %}
 
-<!DOCTYPE html>
-<html>
-        {% block content %}
+{% block content%}
+<div class="container">
+		
+        <h3> Trending Technology news sources</h3>
+        <hr>
 
+        {{ macro.displaySourceList(sources)}}
 
-    <head>
-    <body>
-        <meta charset="utf-8">
-        {% if title %}
-        <title> {{ title }}</title>
-        {% else %}
-        <title> Welcome to the best News Highlight Website Online </title>
-        {% endif %}
+        
+         
+        <h3> Trending Business news sources</h3>
+        <hr>
 
-   
-        <!-- Popular movie section  -->
-        <h3> Popular Articles</h3>
-         <ul>
-            {% for popular_article in popular %}
-                <li>{{ popular_article.title}}</li>
-            {% endfor %}
+        {{ macro.displaySourceList(business_sources)}}
 
-        </ul>
-    </ul>
+    
+         
+        <h3> Trending  Entertainment news sources</h3>
+        <hr>
 
-    <!-- Upcoming movie  -->
-    <h3> Trending Articles </h3>
-     <ul>
-        {% for trending_movie in trending %}
-            <li>{{ trending_movie.title}}</li>
-        {% endfor %}
+        {{ macro.displaySourceList(entertainment_sources)}}
 
-    </ul>
+         
+        <h3> Trending Sports news sources</h3>
+        <hr>
+
+        {{ macro.displaySourceList(sports_sources)}}
+	
+</div>
 
 
-    </body>
-    {% endblock%}
-</html>
+{%endblock%}
