@@ -17,7 +17,7 @@ def configure_request(app):
 	api_key = '8ddbfc1101a9423483668ecbef9209c9'
 	base_url = 'https://newsapi.org/v2/sources?language=en&category={}&apiKey={}'
 	articles_url = 'https://newsapi.org/v2/everything?language=en&sources={}&apiKey={}'
-	
+	secret_key='cossie14'
 
 def get_sources(category):
 	'''
