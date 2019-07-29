@@ -1,8 +1,8 @@
 .container{
-background-color: blueviolet
+background-color: blue;
     
 }
-h3{
+h1{
     color: chartreuse;
 }
 body{
@@ -16,6 +16,6 @@ body{
 
 }
 #a{
-color: blue
+color: blue;
 }
 
